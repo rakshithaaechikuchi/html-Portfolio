@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Worker Registration</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #c2e9fb, #a1c4fd);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .registration-form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 350px;
+    }
+
+    .registration-form h2 {
+      text-align: center;
+      color: #2d3436;
+    }
+
+    .registration-form p {
+      text-align: center;
+      font-style: italic;
+      color: #636e72;
+      margin-bottom: 20px;
+    }
+
+    .registration-form input,
+    .registration-form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .registration-form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #0984e3;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .registration-form button:hover {
+      background-color: #0652dd;
+    }
+  </style>
+</head>
+<body>
+  <div class="registration-form">
+    <h2>Worker Registration</h2>
+    <p>"Your skills are your strength — let's build a better future together!"</p>
+    <form>
+      <input type="text" name="name" placeholder="Full Name" required>
+      <input type="text" name="address" placeholder="Address" required>
+      <input type="tel" name="mobile" placeholder="Mobile Number" required>
+      <input type="email" name="email" placeholder="Email ID" required>
+      <textarea name="skills" rows="3" placeholder="Skills" required></textarea>
+      <textarea name="experience" rows="3" placeholder="Experience" required></textarea>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>

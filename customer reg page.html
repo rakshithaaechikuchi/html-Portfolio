@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Registration</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .registration-form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      width: 350px;
+    }
+
+    .registration-form h2 {
+      text-align: center;
+      color: #2d3436;
+    }
+
+    .registration-form p {
+      text-align: center;
+      font-style: italic;
+      color: #636e72;
+      margin-bottom: 20px;
+    }
+
+    .registration-form input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-sizing: border-box;
+    }
+
+    .registration-form button {
+      width: 100%;
+      padding: 12px;
+      background-color: #6c5ce7;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .registration-form button:hover {
+      background-color: #5a4fcf;
+    }
+  </style>
+</head>
+<body>
+  <div class="registration-form">
+    <h2>Customer Registration</h2>
+    <p>"Connecting you to trusted hands in your community!"</p>
+    <form>
+      <input type="email" name="email" placeholder="Email ID" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <input type="tel" name="mobile" placeholder="Mobile Number" required>
+      <button type="submit">Register</button>
+    </form>
+  </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #a1ffce, #faffd1);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .welcome-box {
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+      width: 320px;
+    }
+
+    .welcome-box h1 {
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+
+    .welcome-box p {
+      color: #555;
+      margin-bottom: 30px;
+      font-style: italic;
+    }
+
+    .welcome-box button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      color: white;
+      background-color: #00b894;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .welcome-box button:hover {
+      background-color: #019875;
+    }
+
+    .smiley {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-box">
+    <div class="smiley">😊</div>
+    <h1>Welcome to Rural Connect</h1>
+    <p>"Together we grow, together we thrive!"</p>
+    <button onclick="location.href='register-worker.html'">Register as Worker</button>
+    <button onclick="location.href='register-customer.html'">Register as Customer</button>
+    <button onclick="location.href='login.html'">Already Registered? Login</button>
+  </div>
+</body>
+</html>
