@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rural App - Welcome</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      height: 100vh;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url("work.png") no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    .splash {
+      text-align: center;
+      background: rgba(255, 255, 255, 0.85);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .logo {
+      width: 140px;
+      height: 140px;
+      margin: 0 auto 20px;
+      animation: popIn 1.5s ease-out;
+    }
+
+    .logo img {
+      width: 100%;
+      height: 100%;
+    }
+
+    .app-name {
+      font-size: 38px;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 12px;
+    }
+
+    .quote {
+      font-size: 18px;
+      color: #444;
+      font-style: italic;
+      opacity: 0;
+      animation: slideUp 2s ease-in-out forwards;
+      animation-delay: 1s;
+    }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      0% { transform: translateY(20px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+  </style>
+
+  <script>
+    // Redirect to registration page after 4 seconds
+    setTimeout(() => {
+      window.location.href = "register.html";
+    }, 4000);
+  </script>
+</head>
+<body>
+  <div class="splash">
+    <div class="logo">
+      <img src="homeservices - Copy (2).png" alt="Rural App Logo">
+    </div>
+    <div class="app-name">Rural</div>
+    <div class="quote">"Rooted in the soil, rising with hope."</div>
+  </div>
+</body>
+</html>
