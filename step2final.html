@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome Page</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      /* Update the background property here */
+      background: url(https://images.pexels.com/photos/259637/pexels-photo-259637.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500) no-repeat center center fixed;
+     
+      
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .welcome-box {
+      background: rgba(199, 203, 201, 0.9);
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      width: 350px;
+    }
+
+    .welcome-box h1 {
+      color: #114331;
+      margin-bottom: 10px;
+    }
+
+    .welcome-box p {
+      color: #444;
+      margin-bottom: 30px;
+      font-style: italic;
+      font-weight: 500;
+    }
+
+    .welcome-box button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: none;
+      border-radius: 8px;
+      font-weight: bold;
+      color: white;
+      background-color: #27ae60;
+      cursor: pointer;
+      font-size: 16px;
+    }
+
+    .welcome-box button:hover {
+      background-color: #219150;
+    }
+
+    .smiley {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-box">
+    <div class="smiley">🌾</div>
+    <h1>Welcome to Rural Connect</h1>
+    <p>"Sowing hope, reaping opportunities – your future begins here."</p>
+    <button onclick="location.href='register-worker.html'">Register as Worker</button>
+    <button onclick="location.href='register-customer.html'">Register as Customer</button>
+    <button onclick="location.href='login.html'">Already Registered? Login</button>
+  </div>
+</body>
+</html>
